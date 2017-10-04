@@ -1,10 +1,12 @@
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * Created by tphadke on 8/29/17.
+ */
 public class Main {
     Map <Processor, List<Processor> > graph ;
 
@@ -23,14 +25,17 @@ public class Main {
         //TODO: Send an initial message Message.M to this processor.
         try{
 	        if (root != null){
-	        	root.getMessageBuffer().addObserver(root);
-	        	root.sendMessgeToMyBuffer(Message.M);
+	        	root.sendMessgeToMyBuffer(Message.M, root);
 	        	System.out.println("The root Processor has ID " + root.getID());
 	        	root.printSpanningTree();
 	        }
 	        else
 	        	throw new IllegalArgumentException("No such root exists");
         }
+        catch (IllegalArgumentException e) {
+			// TODO: handle exception
+        	System.out.println("Illegal argument found. " + e.getMessage());
+		}
         catch (Exception e) {
 			// TODO: handle exception
         	System.out.println(e.getMessage());
@@ -38,6 +43,12 @@ public class Main {
         
     }
 
+    /**
+     * 
+     * @param id
+     * @return Processor with id as the root processor
+     */
+    
     private Processor selectRootProcessor(int id){
     	
     	for (Processor P : this.graph.keySet()){
@@ -47,6 +58,10 @@ public class Main {
     	return null;
     }
     
+    /*
+     * Main Method to initialize the graph of processors 
+     * 
+     * */
     @SuppressWarnings("serial")
 	public void init(){
         
@@ -73,3 +88,4 @@ public class Main {
     	
     }
 }
+
