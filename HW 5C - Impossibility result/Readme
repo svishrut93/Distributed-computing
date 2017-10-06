@@ -1,3 +1,7 @@
 
 Prove the impossibility result for leader election for the anonymous ring.
 
+The imposiibility result states that there is no anonymous leader election algorithm for ring systems :
+
+The showed result applies for non-uniform algorithms and synchronous rings:
+In synchronous systems, messages are delivered in rounds, after which a computation step is performed. 
