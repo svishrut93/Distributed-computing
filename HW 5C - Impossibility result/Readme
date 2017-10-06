@@ -5,3 +5,33 @@ The imposiibility result states that there is no anonymous leader election algor
 
 The showed result applies for non-uniform algorithms and synchronous rings:
 In synchronous systems, messages are delivered in rounds, after which a computation step is performed. 
+In the case of anonymous ring 
+
+1 )all processors always begin in the same state.
+2)They execute the same program at the computation step , because they have identical state machine. 
+3)Same messages are sent by all the processors in every round. 
+
+For the purpose of proof, consider a synchronous ring with number of processors n > 1, and assume by contradiction that A is an anonymous 
+algorithm for electing a leader processor in the ring.
+
+Lemma: For every round "k" of the execution of A on R , the states of all the processors at the end of each round k are the same.
+
+Proof : Applying induction 
+
+Base case : K = 0 . All processors will begin in the same start state. 
+
+Induction case : If the lemma is true, then it holds for case k-1 as well.
+Processors send messages Mr and Ml to the left and right neighbours in round k-1 , in which they are in the same state. 
+
+In the next round = (k-1 )+1 = k : all processors will recieve the messages to their left and right respectively.
+
+Therefore, all processors recieve exactly the same messages in round k , because they execute the same program and are in the same state at 
+end of k.
+
+
+If this is true then, any processor announces itself as leader at the end of k, then all other processors will also announce themselves 
+as leaders. A leader election algorithm must have only one leader, but here all processors can claim to be leaders. 
+
+This contradicts the assumption that A is a leader elction algorithm.
+
+
