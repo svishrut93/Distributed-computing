@@ -1,42 +1,29 @@
 
+import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
 
-
-public class VectorClock implements Comparable<VectorClock>{
+public class VectorClock implements Comparable<Object>{
 	//TODO: read up how to use a comparable and a comparator
 	//TODO: Do you see an advantage in making it an Integer ?? 
 	int[] vc;
+	ReentrantLock lock = new ReentrantLock();
 
 	public VectorClock( int noOfProcesses ) {
 		vc = new int [noOfProcesses];
-		int i = 0 ; 
-		for(int v : vc)
-		{
-			this.vc[i]= v; 
-			i++;
-		}
 		//TODO : Set all to 0.  Do you need to explicitly initilize to 0
 	}
-
-	public int compareTo(VectorClock o, int id ) {
-		// TODO implement a compare to method that will compare two vector clocks
-		//What if the definition of equality of two vector clocks
-		//return -1 if 
-		//return 0 if 
-		//return 1 if 
-		//return 2 if not comparable
-		if(this.vc[id] < o.vc[id])
-		{
-			return 1 ; 
-		}
-		else if (this.vc[id]<o.vc[id])
-		{
-			return 2 ;
-		}
-		else
-		{
-			return 0 ; 
+	
+	
+	public VectorClock(VectorClock vectorClock) {
+		// TODO Auto-generated constructor stub
+		this.vc = new int[vectorClock.vc.length];
+		int i = 0;
+		for (int v : vectorClock.vc){
+			this.vc[i] = v;
+			i++;
 		}
 	}
+
 	/**
 	 * Based on a event vector clock will be incremented, changed or updated.
 	 * Which index should be updated will be decided by a processor
@@ -44,27 +31,35 @@ public class VectorClock implements Comparable<VectorClock>{
 	 * @param value
 	 */
 	public void updateAt(int index, int value){
-		//TODO : Apply Vector clock algorithm 
 		
-		System.out.println("Entered here ");
-		vc[index]= value;
-		
-		System.out.println("State of processor "+this + "after execution");
-		for(int i = 0 ; i < 3 ; i ++)
-		{
-			System.out.println(this.vc[i]);
+		try {
+			lock.lock();
+			vc[index]= value;
 		}
-			
+		finally{
+			lock.unlock();
+		}
+	}
+	
+	/**
+	 * Method that prints the Clock
+	 */
+	public void printClock(){
+		for (int val : vc){
+			System.out.print(val+", ");
+		}
+		System.out.println();
 	}
 
 	@Override
-	public int compareTo(VectorClock o) {
+	public int compareTo(Object o) {
 		// TODO Auto-generated method stub
+		VectorClock temp = (VectorClock)o;
+		for (int i =0; i < vc.length; i ++){
+			if (temp.vc[i] > this.vc[i] )
+				return 1;
+		}
 		return 0;
 	}
-	
-	
-	
-	
 	
 }
