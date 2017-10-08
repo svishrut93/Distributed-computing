@@ -34,7 +34,7 @@ Input a cut for example 4 1 or 4 2
 
 <h1>SAMPLE OUTPUT</h1>
 
-![alt text]()
+![alt text](https://github.com/svishrut93/cs249-Distributed-computing/blob/master/HW%205B-%20Maximal%20Consistent%20Cut/Sample_Output.PNG)
 
 
 
