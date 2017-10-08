@@ -34,7 +34,7 @@ Input a cut for example 4 1 or 4 2
 
 <h1>SAMPLE OUTPUT</h1>
 
-![alt text](C:\Distributed computing\Maximal cut\Sample_Output.png)
+![alt text]()
 
 
 
