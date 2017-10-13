@@ -37,61 +37,62 @@ Recording my local variables...Processor: 1<br>
 Doing some computation on 3<br>
 Processing Algorithm message....<br>
 Doing some computation on 3<br>
-Doing some computation on 3
-Processing Algorithm message....
-Doing some computation on 3
-Doing some computation on 3
-Processing Algorithm message....
-Doing some computation on 3
-Processing Algorithm message....
-Doing some computation on 3
-Processing Algorithm message....
-Starting recording Channel 21
-Recording my registers... Processor: 3
-Recording my program counters...Processor: 3
-Recording my local variables...Processor: 3
-Starting recording Channel 31
-Recording my registers... Processor: 2
-Recording my program counters...Processor: 2
-Recording my local variables...Processor: 2
-Starting recording Channel 23
-Channel 31 has stopped recording.
-Channel 21 has stopped recording.
-Starting recording Channel 12
-Channel 12 has stopped recording.
-Channel 23 has stopped recording.
-Doing some computation on 1
-Processing Algorithm message....
-Doing some computation on 2
-Doing some computation on 2
-Processing Algorithm message....
-Doing some computation on 3
-Processing Algorithm message....
-Doing some computation on 1
-Processing Algorithm message....
-Doing some computation on 1
-Processing Algorithm message....
-Doing some computation on 3
-Doing some computation on 3
-Processing Algorithm message....
-Doing some computation on 3
-Processing Algorithm message....
-Doing some computation on 3
-Doing some computation on 1
-Processing Algorithm message....
-Doing some computation on 2
-Processing Algorithm message....
-Doing some computation on 2
-------------------------Printing Snapshot for Processor P:1----------------------------
-Number of Algorithms message received untill first marker message = 3
-Channel C:21
-Message Algorithm received from Processor P:2
-Channel C:31
-Message Algorithm received from Processor P:3
---------------------------------------------------------------------------------------------
-------------------------Printing Snapshot for Processor P:2----------------------------
-Number of Algorithms message received untill first marker message = 3
---------------------------------------------------------------------------------------------
-------------------------Printing Snapshot for Processor P:3----------------------------
-Number of Algorithms message received untill first marker message = 5
---------------------------------------------------------------------------------------------
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Starting recording Channel 21<br>
+Recording my registers... Processor: 3<br>
+Recording my program counters...Processor: 3<br>
+Recording my local variables...Processor: 3<br>
+Starting recording Channel 31<br>
+Recording my registers... Processor: 2<br>
+Recording my program counters...Processor: 2<br>
+Recording my local variables...Processor: 2<br>
+Starting recording Channel 23<br>
+Channel 31 has stopped recording.<br>
+Channel 21 has stopped recording.<br>
+Starting recording Channel 12<br>
+Channel 12 has stopped recording.<br>
+Channel 23 has stopped recording.<br>
+Doing some computation on 1<br>
+Processing Algorithm message....<br>
+Doing some computation on 2<br>
+Doing some computation on 2<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Doing some computation on 1<br>
+Processing Algorithm message....<br>
+Doing some computation on 1<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
+Doing some computation on 1<br>
+Processing Algorithm message....<br>
+Doing some computation on 2<br>
+Processing Algorithm message....<br>
+Doing some computation on 2<br>
+------------------------Printing Snapshot for Processor P:1----------------------------<br>
+Number of Algorithms message received untill first marker message = 3<br>
+Channel C:21<br>
+Message Algorithm received from Processor P:2<br>
+Channel C:31<br>
+Message Algorithm received from Processor P:3<br>
+--------------------------------------------------------------------------------------------<br>
+------------------------Printing Snapshot for Processor P:2----------------------------<br>
+Number of Algorithms message received untill first marker message = 3<br>
+--------------------------------------------------------------------------------------------<br>
+------------------------Printing Snapshot for Processor P:3----------------------------<br>
+Number of Algorithms message received untill first marker message = 5<br>
+--------------------------------------------------------------------------------------------<br>
+<br>
