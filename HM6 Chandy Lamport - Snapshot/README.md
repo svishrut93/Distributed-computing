@@ -7,8 +7,8 @@ The program works on the following topology of distributed system.
 
 
 <h2> Sample Output </h2>
-Doing some computation on 1
-Doing some computation on 1
+Doing some computation on 1<br>
+Doing some computation on 1<br>
 Processing Algorithm message....
 Doing some computation on 1
 Doing some computation on 1
