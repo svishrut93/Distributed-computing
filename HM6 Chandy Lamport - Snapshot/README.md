@@ -9,34 +9,34 @@ The program works on the following topology of distributed system.
 <h2> Sample Output </h2>
 Doing some computation on 1<br>
 Doing some computation on 1<br>
-Processing Algorithm message....
-Doing some computation on 1
-Doing some computation on 1
-Processing Algorithm message....
-Doing some computation on 1
-Doing some computation on 1
-Processing Algorithm message....
-Doing some computation on 1
-Processing Algorithm message....
-Doing some computation on 1
-Doing some computation on 2
-Doing some computation on 2
-Processing Algorithm message....
-Doing some computation on 2
-Doing some computation on 2
-Processing Algorithm message....
-Doing some computation on 2
-Processing Algorithm message....
-Doing some computation on 2
-Processing Algorithm message....
-Doing some computation on 2
-Processing Algorithm message....
-Recording my registers... Processor: 1
-Recording my program counters...Processor: 1
-Recording my local variables...Processor: 1
-Doing some computation on 3
-Processing Algorithm message....
-Doing some computation on 3
+Processing Algorithm message....<br>
+Doing some computation on 1<br>
+Doing some computation on 1<br>
+Processing Algorithm message....<br>
+Doing some computation on 1<br>
+Doing some computation on 1<br>
+Processing Algorithm message....<br>
+Doing some computation on 1<br>
+Processing Algorithm message....<br>
+Doing some computation on 1<br>
+Doing some computation on 2<br>
+Doing some computation on 2<br>
+Processing Algorithm message....<br>
+Doing some computation on 2<br>
+Doing some computation on 2<br>
+Processing Algorithm message....<br>
+Doing some computation on 2<br>
+Processing Algorithm message....<br>
+Doing some computation on 2<br>
+Processing Algorithm message....<br>
+Doing some computation on 2<br>
+Processing Algorithm message....<br>
+Recording my registers... Processor: 1<br>
+Recording my program counters...Processor: 1<br>
+Recording my local variables...Processor: 1<br>
+Doing some computation on 3<br>
+Processing Algorithm message....<br>
+Doing some computation on 3<br>
 Doing some computation on 3
 Processing Algorithm message....
 Doing some computation on 3
