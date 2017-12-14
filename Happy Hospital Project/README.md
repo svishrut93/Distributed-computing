@@ -11,3 +11,7 @@ The different components used in this project include <br>
 5. Apache Camel <br>
 6. Java SPRING <br>
 
+The redesign of the HappyPatients hospital has the following architecture: <br>
+
+![alt text](http://url/to/img.png)
+
