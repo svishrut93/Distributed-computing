@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camel="http://camel.apache.org/schema/spring"
+	xmlns:osgi="http://www.springframework.org/schema/osgi" xmlns:cxf="http://camel.apache.org/schema/cxf"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/osgi 
+	http://www.springframework.org/schema/osgi/spring-osgi.xsd 
+	http://camel.apache.org/schema/spring 
+	http://camel.apache.org/schema/spring/camel-spring.xsd 
+	http://camel.apache.org/schema/cxf 
+	http://camel.apache.org/schema/cxf/camel-cxf-2.8.3.xsd
+	 http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<context:component-scan base-package="com.dc" />
+	
+	<bean id="myEmailConsumer" class="com.dc.EmailConsumer"/>
+	<bean id="myAnalyticsConsumer" class="com.dc.AnalyticsConsumer"/>
+ 	
+ 	<camelContext xmlns="http://camel.apache.org/schema/spring">
+       <route id="emailQueue">
+			<from uri="qmanager:queue:emailQ"/>
+			<log message="Routing message from photos to outbox"/>
+			<bean ref="myEmailConsumer" method="process"/>
+	   </route>
+	   <route id="analQueue">
+			<from uri="qmanager:queue:analQ"/>
+			<bean ref="myAnalyticsConsumer" method="process"/>
+	   </route>
+    </camelContext>
+    
+    <camel:camelContext id="camel-client">
+        <camel:template id="camelTemplate" />
+    </camel:camelContext>
+
+    <bean id="qmanager" class="org.apache.activemq.camel.component.ActiveMQComponent">
+        <property name="brokerURL" value="tcp://localhost:61616" />
+    </bean>   
+    
+    
+    <!-- SET default mail properties -->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com"/>
+        <property name="port" value="587"/>
+        <property name="protocol" value="smtp"/>
+        <property name="username" value="write email"/>
+        <property name="password" value="write password"/>
+        <property name="javaMailProperties">
+            <props>
+                <!-- <prop key="mail.transport.protocol">smtp</prop> -->
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+                <prop key="mail.debug">true</prop>
+                <prop key="mail.smtp.quitwait">false</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
