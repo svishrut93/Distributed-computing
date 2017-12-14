@@ -48,7 +48,9 @@ Every time an action is performed on the database a message is sent to the 2 que
 The main class for this is called Application.java. 
 
 
-There is also a PPT relating to the project that is attached for further reference.
+There is also a PPT relating to the project that is attached for further reference - HappyPatientsHospitals.pptx
+
+Feel free to contact me for any further clarifications.
 
 
 
