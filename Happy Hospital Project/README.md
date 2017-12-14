@@ -13,5 +13,6 @@ The different components used in this project include <br>
 
 The redesign of the HappyPatients hospital has the following architecture: <br>
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/svishrut93/Distributed-computing/blob/master/Happy%20Hospital%20Project/Architecture/architecture.PNG)
+
 
