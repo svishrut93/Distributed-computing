@@ -1,0 +1,1 @@
+{"msg":"Record retrieved with id: 1","patient":"[{\"id\":1,\"age\":25,\"discharged\":0,\"disease\":\"fever\",\"name\":\"John\",\"room_no\":12,\"status\":\"ongoing\",\"email_id\":\"vishrut.sharma@sjsu.edu\",\"created_at\":\"2017/12/12 20:43:57\",\"updated_at\":\"2017/12/12 20:43:57\"}]","type":"GET"}
