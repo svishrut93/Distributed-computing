@@ -36,7 +36,21 @@ To execute the policy server run the file PolicyController.java inside PolicySer
 
 Both files from DC Project and Policy server must be run concurrently.<br> 
 In order to execute the applications on the server , perform a ,maven build over the project. <br>
-WAR files are not included in the repository because of their large size, hence it is imperative to build project using maven. <br> 
+WAR files are not included in the repository because of their large size(>50MB), hence it is imperative to build project using maven. <br> 
+
+Below is the schema used for cassandra database <br> 
+keyspace name = hospital 
+table name = patient.
+
+![alt text](https://github.com/svishrut93/Distributed-computing/blob/master/Happy%20Hospital%20Project/Architecture/Schema.png)
+
+
+
+
+
+
+
+
 
 
 
