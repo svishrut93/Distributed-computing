@@ -30,3 +30,13 @@ The RESTful webservice is built using SPRING and the database is connected using
 To execute this part of the project run class PatientController.java as shown in the below diagram.<br>
 
 ![alt text](https://github.com/svishrut93/Distributed-computing/blob/master/Happy%20Hospital%20Project/Architecture/DC%20structure.PNG)
+
+To execute the policy server run the file PolicyController.java inside PolicyServer-->src-->main-->java-->com-->java-->controller <br>
+
+
+Both files from DC Project and Policy server must be run concurrently.<br> 
+In order to execute the applications on the server , perform a ,maven build over the project. <br>
+WAR files are not included in the repository because of their large size, hence it is imperative to build project using maven. <br> 
+
+
+
