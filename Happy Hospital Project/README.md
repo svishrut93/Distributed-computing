@@ -1,4 +1,4 @@
-<h1> HappyPatients hospital redesign </h1>
+<h1> HappyPatients Hospital Redesign </h1>
 
 This repository contains all the files required to change the HappyPatients hospital from a monolith to an easy to understand and operate microservices architecture. <br>
 
