@@ -39,12 +39,16 @@ In order to execute the applications on the server , perform a ,maven build over
 WAR files are not included in the repository because of their large size(>50MB), hence it is imperative to build project using maven. <br> 
 
 Below is the schema used for cassandra database <br> 
-keyspace name = hospital 
-table name = patient.
-
+keyspace name = hospital<br>
+table name = patient<br>
 ![alt text](https://github.com/svishrut93/Distributed-computing/blob/master/Happy%20Hospital%20Project/Architecture/Schema.png)
 
+The folder :ActiveMQConsumer contains all java files to perform 2 actions : Send Email and Analytics. 
+Every time an action is performed on the database a message is sent to the 2 queues and corresponding actions are performed. 
+The main class for this is called Application.java. 
 
+
+There is also a PPT relating to the project that is attached for further reference.
 
 
 
